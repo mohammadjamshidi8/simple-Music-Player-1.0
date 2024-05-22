@@ -2,6 +2,7 @@ import { useState } from "react"
 import MusicInfo from "./MusicInfo"
 import Player from "./Player"
 import chillHop from "../data"
+import Library from "./Library"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
     <div className="w-full h-screen flex flex-col justify-center items-center">
       <MusicInfo currentSong={currentSong}/>
       <Player isPlaying={isPlaying} setIsPlaying={setIsPlaying} currentSong={currentSong}/>
+      <Library songs={songs} setCurrentSong={setCurrentSong} />
     </div>
     </>
   )
